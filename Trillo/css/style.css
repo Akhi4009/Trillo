@@ -32,6 +32,17 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
 .sidebar {
   flex: 0 0 18%;
   background-color: var(--grey-dark-1);
@@ -84,6 +95,21 @@ body {
   text-align: center;
   padding: 2.5rem; }
 
+.btn-inline {
+  border: none;
+  color: var(--Primary);
+  cursor: pointer;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  background-color: transparent;
+  transform: all .2s; }
+  .btn-inline:hover {
+    color: var(--grey-dark-1); }
+  .btn-inline:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
 .container {
   max-width: 128rem;
   margin: 8rem auto;
@@ -97,7 +123,7 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--grey-light-2);
+  border-bottom: 1px solid var(--grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -154,6 +180,47 @@ body {
     margin-right: 1rem; }
 
 .hotel-view {
-  background-color: orangered;
   height: 80rem;
   flex: 1; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-light-2); }
+  .overview__heading {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    font-size: 1.75rem;
+    color: var(--Primary); }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex;
+    vertical-align: middle; }
+  .overview__icon-location {
+    margin-right: .5rem; }
+  .overview__rating {
+    background-color: var(--Primary);
+    color: #fff;
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column; }
+    .overview__rating-average {
+      font-size: 2.25rem;
+      font-weight: 300; }
+    .overview__rating-count {
+      font-size: .8rem;
+      text-transform: uppercase; }
