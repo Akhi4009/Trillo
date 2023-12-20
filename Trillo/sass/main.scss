@@ -1,14 +1,13 @@
 // abstracts
 
 @import "abstracts/variable";
-@import "abstracts/mixin";
+
 
 // base
 
 @import "base/base";
 @import "base/animation";
-@import "base/typography";
-@import "base/utilities";
+
 
 // components
 @import "components/sidebar";
@@ -26,6 +25,6 @@
 
 // page
 
-@import "pages/home";
+
 
 
