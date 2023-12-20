@@ -11,10 +11,15 @@
 @import "base/utilities";
 
 // components
-
+@import "components/sidebar";
 
 
 //  layout
+@import "layouts/container";
+@import "layouts/content";
+@import "layouts/header";
+@import "layouts/hotel-view";
+
 
 
 // page

@@ -1,15 +1,12 @@
 {
-  "name": "Trillo",
+  "name": "trillo",
   "version": "1.0.0",
-  "description": "landing page",
+  "description": "trillo app",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass sass/main.scss css/style.css -w",
-    "compile": "node-sass sass/main.scss css/style.comp.css ",
-    "concat": "concat -o css/style.concat.css css/style.css css/style.comp.css",
-    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
-    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build": "npm-run-all compile concat prefix compress"
+    "watch": "node-sass sass/main.scss css/style.css --w",
+    "compile": "node-sass sass/main.scss css/style.comp.css "
+    
   },
   "author": "",
   "license": "ISC",
