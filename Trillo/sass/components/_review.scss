@@ -1,0 +1,59 @@
+.review {
+    background-color: #fff;
+    box-shadow: var(--shadow-lght);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+
+
+    &__text{
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__user{
+        display: flex;
+        text-align: center;
+
+        &-box{
+            margin-right: auto;
+        }
+        &-name{
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: .4rem;
+        }
+        &-date{
+            font-size: 1rem;
+            color: var(--grey-dark-3);
+        }
+    }
+
+    &__rating{
+        color: var(--Primary);
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &__photo{
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+    }
+
+    &::before{
+        content: "\201c";
+        position: absolute;
+        top: -.75rem;
+        left: -.5rem;
+        font-size: 15rem;
+        line-height: 1;
+        color: var(--grey-light-3);
+        z-index: 1;
+
+    }
+}

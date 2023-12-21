@@ -7,8 +7,16 @@
     padding-bottom: 2px;
     background-color: transparent;
     transform: all .2s;
+    & span{
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
     &:hover{
         color: var(--grey-dark-1);
+
+        span{
+            margin-left: 8px;
+        }
     }
 
     &:focus {
